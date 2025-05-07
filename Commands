@@ -20,3 +20,10 @@ cd /var/www/html
 #allow 80 port for apache Server
 
 
+#mysql Setup in ubuntu
+sudo mysql -u root -p
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root';
+mysql -u root -p 
+create database sample;
+use sample;
+show tables;
