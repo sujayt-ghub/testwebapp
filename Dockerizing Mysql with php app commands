@@ -8,3 +8,10 @@ sudo docker build -t myphapp .
 sudo docker ps
 sudo docker run -d -p 80:80 --link mysqldb --name myapp myphapp:latest
 sudo docker ps
+
+--‐---------
+""""""""«""""""""
+
+
+reference link for docker app and mysql connection 
+https://youtu.be/f3AE8HX3W6s?si=mJJkJRY2ftfnpEV6
