@@ -1,0 +1,10 @@
+sudo docker run -d -p 3306:3306 --name mysqldb -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=sample mysql
+
+sudo docker image prune -a #command to remove stopped and unwanted images, without -a Will remove all images, container etc
+
+#replace dB Server name to mysql docker container name (ex. mysqldb) in dbinfo.inc file
+#I.e. replace localhost to mysql app name in dbinfo.inc file before building application 
+sudo docker build -t myphapp .
+sudo docker ps
+sudo docker run -d -p 80:80 --link mysqldb --name myapp myphapp:latest
+sudo docker ps
