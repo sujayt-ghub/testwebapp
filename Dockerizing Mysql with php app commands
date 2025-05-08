@@ -15,3 +15,6 @@ sudo docker ps
 
 reference link for docker app and mysql connection 
 https://youtu.be/f3AE8HX3W6s?si=mJJkJRY2ftfnpEV6
+
+reference link for current app creation
+https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Tutorials.WebServerDB.CreateWebServer.html
