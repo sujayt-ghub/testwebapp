@@ -4,7 +4,13 @@ prerequisites -
   sudo apt install mysql-server
   #make sure the current mysql server can able from outside network
   #refer this https://stackoverflow.com/questions/15872543/access-mysql-remote-database-from-command-line
-  #
+  #sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf #edit the file
+  #Search for bind-address in my.cnf or mysqld.cnf and and change 127.0.0.1 to 192.168.1.100 ( local ip address )
+  #  Example bind-address = 192.168.1.100
+  #sudo /etc/init.d/mysql restart  #restart mysql service
+
+
+
 -------------------------------
 example creating sample php application docker image and connecting mysql host network which is out of docker network.
 
