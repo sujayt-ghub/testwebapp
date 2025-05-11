@@ -3,7 +3,8 @@ prerequisites -
   sudo apt install docker.io
   sudo apt install mysql-server
   #make sure the current mysql server can able from outside network
-  
+  #refer this https://stackoverflow.com/questions/15872543/access-mysql-remote-database-from-command-line
+  #
 -------------------------------
 example creating sample php application docker image and connecting mysql host network which is out of docker network.
 
