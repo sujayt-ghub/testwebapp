@@ -14,6 +14,7 @@ prerequisites -
   #CREATE USER 'root'@'%' IDENTIFIED BY 'password';
   #GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION;
   #FLUSH PRIVILEGES;
+  alter user 'root'@'localhost' identified with mysql_native_password by 'new_password';
   #If you want to have access only from specific ip address , change 'root'@'%' to 'root'@'( ip address or hostname)'
   test - mysql -h 192.168.1.100 -u root -p
 
